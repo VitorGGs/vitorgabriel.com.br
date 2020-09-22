@@ -32,7 +32,7 @@
 					<ul id="navigation">
 						<li><a href="#about-me">Sobre</a></li>
 						<li><a href="#posts">Projetos</a></li>
-						<li><a href="#contact-form">Contato</a></li>
+						<li><a href="mailto:contact@vitorgabriel.com.br">Contato</a></li>
 					</ul>
 
 				</div>
@@ -82,31 +82,26 @@
 					<p>
 						No meu último ano da faculdade de Economia, encontrei a programação e me apaixonei à primeira vista.
 					</p>
-
 					<p>
-						
+						Gosto muito de desenvolver soluções do ínicio ao fim, aprender, resolver bugs e criar código limpo e simples.
 					</p>
 				
 					<hr>
 
 					<h4>TOP EXPERTISE</h4>
 
-					<p>Meu talento é desenvolver soluções do ínicio ao fim, do byte ao pixel. Meu curriculo pode ser baixado <a target="_blank "href="resume.pdf">aqui.</a></p>
-
 					<div id="skills">
 						<ul>
 							<li>Python</li>
-							<li>R</li>
-							<li>SQL</li>
-							<li>Data Science</li>
-							<li>AWS</li>
+							<li>Travis CI</li>
+							<li>Selenium</li>
+							<li>TDD</li>
 						</ul>
 
 						<ul>
 							<li>HTML/CSS</li>
 							<li>Django</li>
 							<li>Flask</li>
-							<li>React</li>
 							<li>Heroku</li>
 						</ul>
 					</div>
@@ -118,7 +113,7 @@
 							<img src="{{ url_for('static', filename= 'images/github.png') }}">
 						</div>
 					</div>
-					<a target="_blank" href="#">@VitorGGs</a>
+					<a target="_blank" href="https://github.com/VitorGGs/VitorGGs">@VitorGGs</a>
 				</div>
 				
 			</div>
@@ -133,62 +128,40 @@
 
 				<div>
 					<div class="post">
-						<img class="thumbnail" src="">
-						<div class="post-preview">
-							<h6 class="post-title">Python Birds</h6>
-							<p class="post-intro">This is a sentence. Some more text</p>
-							<a href="post.html">Read More</a>
-						</div>
-					</div>
-				</div>
-
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="">
-						<div class="post-preview">
-							<h6 class="post-title">My Store API</h6>
-							<p class="post-intro">This is a sentence. Some more text</p>
-							<a href="">Read More</a>
-						</div>
-					</div>
-				</div>
-
-				<div>
-					<div class="post">
-						<img class="thumbnail" src="">
+						<img class="thumbnail" src="{{ url_for('static', filename= 'images/microblog.png') }}">
 						<div class="post-preview">
 							<h6 class="post-title">Flask Microblog</h6>
-							<p class="post-intro">This is a sentence. Some more text</p>
-							<a href="">Read More</a>
+							<p class="post-intro">A microblog build with Flask and deployed on heroku</p>
+							<a href="https://github.com/VitorGGs/flask-microblog" target="_blank">Read More</a>
 						</div>
 					</div>
 				</div>
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="{{ url_for('static', filename= 'images/flask.jpg') }}">
+						<div class="post-preview">
+							<h6 class="post-title">REST TODO API</h6>
+							<p class="post-intro">a simple version of a TODO app as a REST API</p>
+							<a target="_blank" href="https://github.com/VitorGGs/rest-todo-app">Read More</a>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="{{ url_for('static', filename= 'images/birds.png') }}">
+						<div class="post-preview">
+							<h6 class="post-title">Python Birds</h6>
+							<p class="post-intro">Implemented a simple version of Angry Birds game</p>
+							<a target="_blank" href="https://github.com/VitorGGs/pythonbirds">Read More</a>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 	</section>
-
-	<section class="s2">
-		<div class='main-container'>
-			<h3 style="text-align: center;">Contato</h3>
-
-			<form id="contact-form">
-				<label>Nome</label>
-				<input class="input-field" type="text" name="name">
-
-				<label>Assunto</label>
-				<input class="input-field" type="text" name="subject">
-
-				<label>Email</label>
-				<input class="input-field" type="text" name="email">
-
-				<label>Mensagem</label>
-				<textarea class="input-field" type="text" name="message"></textarea>
-
-				<input id="submit-btn" type="submit" value="Enviar">
-			</form>
-		</div>
-	</section>
-
 	
 
 	<script type="text/javascript">
